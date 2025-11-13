@@ -8,8 +8,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-poppins);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +22,66 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-poppins), var(--font-inter), system-ui, sans-serif;
+  font-weight: 700;
+}
+
+.hero-grid {
+  background-image: radial-gradient(circle at 20% 20%, #38bdf8 0, transparent 45%),
+    radial-gradient(circle at 80% 30%, rgba(129, 140, 248, 0.8) 0, transparent 50%),
+    radial-gradient(circle at 30% 80%, rgba(14, 165, 233, 0.6) 0, transparent 45%);
+  background-repeat: no-repeat;
+}
+
+.glass-card {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.7), rgba(30, 41, 59, 0.5));
+  border: 1px solid rgba(148, 163, 184, 0.1);
+  backdrop-filter: blur(16px);
+}
+
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-18px) scale(1.02);
+  }
+}
+
+.animate-floaty {
+  animation: floaty 12s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    opacity: 0.85;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+}
+
+.animate-glow {
+  animation: glow 10s ease-in-out infinite;
+}
+
+.noise {
+  position: relative;
+}
+
+.noise::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='400' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  border-radius: inherit;
 }
