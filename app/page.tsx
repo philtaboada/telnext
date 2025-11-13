@@ -174,7 +174,7 @@ const heroSlides: HeroSlide[] = [
     id: "1",
     imagen: "/hs-1.png",
     titulo: "Disfruta en familia",
-    descripcion: "Conecta a toda tu familia con nuestra señal ultra estable. Disfruta de contenido en vivo, deportes, noticias y entretenimiento sin interrupciones. Conexión Wi-Fi de alta velocidad para múltiples dispositivos simultáneos.",
+    descripcion: "Conecta a toda tu familia con nuestra señal ultra estable. Navegación fluida y sin interrupciones para todos tus dispositivos. Conexión Wi-Fi de alta velocidad para múltiples dispositivos simultáneos.",
     ctaTexto: "Ver Planes",
     ctaLink: "#plans",
   },
@@ -189,8 +189,8 @@ const heroSlides: HeroSlide[] = [
   {
     id: "3",
     imagen: "/hs-3.png",
-    titulo: "Streaming sin límites",
-    descripcion: "Accede a miles de películas, series y canales en vivo. Transmite en cualquier dispositivo, en cualquier momento y lugar. La mejor experiencia de entretenimiento al alcance de tu mano.",
+    titulo: "Internet sin límites",
+    descripcion: "Navega, trabaja y estudia sin restricciones. Conexión de alta velocidad disponible las 24 horas del día. La mejor experiencia de internet al alcance de tu mano.",
     ctaTexto: "Comenzar",
     ctaLink: "#plans",
   },
@@ -349,17 +349,17 @@ export default function Home() {
           </div>
         </section>
 
-        {/* More to Stream Section */}
+        {/* More to Connect Section */}
         <section className="py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
               <div className="space-y-6">
-                <h2 className="text-4xl font-bold lg:text-5xl">Más para Transmitir.</h2>
+                <h2 className="text-4xl font-bold lg:text-5xl">Más para Conectar.</h2>
                 <div className="space-y-4 text-lg text-slate-600">
                   <p>
-                    Disfruta de acceso ilimitado a nuestro servicio de streaming. Relájate con temporadas completas de contenido exclusivo, una biblioteca de películas, programas actuales, noticias, comedia y deportes en vivo. Todo esto sin costo adicional, sin letra pequeña.
+                    Disfruta de acceso ilimitado a internet de alta velocidad. Navega, trabaja, estudia y conéctate sin restricciones. Velocidades ultrarrápidas para todas tus necesidades digitales. Todo esto sin costo adicional, sin letra pequeña.
                   </p>
-                  <p>Mira canales deportivos exclusivos cada semana. Obtén el mejor servicio al cliente de TV. Combina tus servicios favoritos.</p>
+                  <p>Conecta todos tus dispositivos simultáneamente. Obtén el mejor servicio de internet con soporte técnico profesional. Elige el plan que mejor se adapte a tus necesidades.</p>
                 </div>
                 <div className="flex flex-wrap gap-4">
                   <Button size="lg">
@@ -444,7 +444,7 @@ export default function Home() {
             <div className="mb-12 text-center">
               <h2 className="mb-4 text-4xl font-bold lg:text-5xl">Tus Planes Perfectos.</h2>
               <p className="mx-auto max-w-2xl text-lg text-slate-600">
-                Disfruta de acceso ilimitado a nuestro servicio de streaming. Relájate con temporadas completas de contenido exclusivo y una biblioteca de películas.
+                Disfruta de acceso ilimitado a internet de alta velocidad. Elige el plan que mejor se adapte a tus necesidades de navegación, trabajo y entretenimiento.
               </p>
             </div>
             <PlansCarousel 
@@ -673,7 +673,7 @@ export default function Home() {
                 />
               </div>
               <p className="mb-4 text-slate-600">
-                Proporcionando los mejores servicios de TV e Internet para tu hogar y negocio.
+                Proporcionando los mejores servicios de Internet para tu hogar y negocio.
               </p>
               <div className="flex gap-4">
                 <a href="#" className="text-slate-400 hover:text-cyan-600 transition-colors">
