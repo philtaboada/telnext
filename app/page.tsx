@@ -274,7 +274,7 @@ const planes = [
 
 const estadisticas = [
   { numero: "15", sufijo: "+", titulo: "Años de experiencia" },
-  { numero: "500", sufijo: "+", titulo: "Clientes en el mundo" },
+  { numero: "5000", sufijo: "+", titulo: "Clientes en el mundo" },
   { numero: "100", sufijo: "+", titulo: "Kilómetros de fibra" },
 ];
 
@@ -698,13 +698,13 @@ export default function Home() {
               <ul className="space-y-3 text-slate-600">
                 <li>Jr. Necochea S/N</li>
                 <li>
-                  <a href="tel:+51997370235" className="hover:text-cyan-600 transition-colors">
-                    +51 997370235
+                  <a href="tel:+51900111333" className="hover:text-cyan-600 transition-colors">
+                    +51 900111333
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:telnextperu@gmail.com" className="hover:text-cyan-600 transition-colors">
-                    telnextperu@gmail.com
+                  <a href="mailto:fibernextperu@gmail.com" className="hover:text-cyan-600 transition-colors">
+                    fibernextperu@gmail.com
                   </a>
                 </li>
               </ul>
