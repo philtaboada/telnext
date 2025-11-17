@@ -370,8 +370,8 @@ export default function Home() {
                     <PhoneIcon className="h-6 w-6 text-cyan-600" />
                     <div>
                       <p className="text-sm text-slate-500">Llámanos diariamente 8.00 - 18.00</p>
-                      <a href="tel:+51997370235" className="text-xl font-bold text-slate-900">
-                        +51 997 370 235
+                      <a href="tel:+51900111333" className="text-xl font-bold text-slate-900">
+                        +51 900111333
                       </a>
                     </div>
                   </div>
@@ -581,8 +581,8 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="font-semibold text-slate-900">Correo</p>
-                      <a href="mailto:telnextperu@gmail.com" className="text-slate-600 hover:text-cyan-600">
-                        telnextperu@gmail.com
+                      <a href="mailto:fibernextperu@gmail.com" className="text-slate-600 hover:text-cyan-600">
+                      fibernextperu@gmail.com
                       </a>
                     </div>
                   </div>
@@ -592,8 +592,8 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="font-semibold text-slate-900">Teléfono</p>
-                      <a href="tel:+51997370235" className="text-slate-600 hover:text-cyan-600">
-                        +51 997 370 235
+                      <a href="tel:+51900111333" className="text-slate-600 hover:text-cyan-600">
+                        +51 900111333
                       </a>
                     </div>
                   </div>
