@@ -135,11 +135,11 @@ export function PlansCarousel({
                 style={{ width: `${100 / cardsToShow}%` }}
               >
                 <Card
-                  className={`relative overflow-hidden border-2 bg-white p-0 h-full ${esDestacado ? "border-cyan-600 shadow-xl" : "border-slate-200"}`}
+                  className={`group relative overflow-hidden border-2 bg-white p-0 h-full transition-all duration-300 cursor-pointer hover:bg-slate-900 hover:border-slate-700 ${esDestacado ? "border-cyan-600 shadow-xl" : "border-slate-200"}`}
                 >
                   {/* Banner superior */}
                   {(plan.nuevo || esDestacado) && (
-                    <div className={`absolute top-0 left-0 right-0 z-10 ${esDestacado ? "bg-cyan-600" : "bg-cyan-500"} py-2 text-center`}>
+                    <div className={`absolute top-0 left-0 right-0 z-10 ${esDestacado ? "bg-cyan-600" : "bg-cyan-500"} py-2 text-center transition-colors group-hover:bg-slate-700`}>
                       <span className="text-xs font-bold uppercase tracking-wider text-white">
                         {esDestacado ? "MÁS POPULAR" : "NUEVO PLAN"}
                       </span>
@@ -150,23 +150,23 @@ export function PlansCarousel({
                     {/* Título */}
                     <div className="mb-6">
                       <h3 className="text-3xl font-bold">
-                        <span className="text-cyan-600">PLAN</span>{" "}
-                        <span className="text-slate-900">{plan.subtitulo}</span>
+                        <span className="text-cyan-600 transition-colors group-hover:text-white">PLAN</span>{" "}
+                        <span className="text-slate-900 transition-colors group-hover:text-white">{plan.subtitulo}</span>
                       </h3>
                     </div>
 
                     {/* Precio */}
                     <div className="mb-6 text-center">
                       <div className="flex items-baseline justify-center gap-1">
-                        <span className="text-lg font-semibold text-slate-700">S/</span>
-                        <span className="text-6xl font-bold text-slate-900">{plan.precio.split(".")[0]}</span>
-                        <span className="text-2xl font-semibold text-slate-700">.{plan.precio.split(".")[1]}</span>
+                        <span className="text-lg font-semibold text-slate-700 transition-colors group-hover:text-slate-300">S/</span>
+                        <span className="text-6xl font-bold text-slate-900 transition-colors group-hover:text-white">{plan.precio.split(".")[0]}</span>
+                        <span className="text-2xl font-semibold text-slate-700 transition-colors group-hover:text-slate-300">.{plan.precio.split(".")[1]}</span>
                       </div>
                     </div>
 
                     {/* Velocidad destacada */}
                     <div className="mb-8 text-center">
-                      <div className="text-4xl font-bold text-cyan-600">{plan.velocidad}</div>
+                      <div className="text-4xl font-bold text-cyan-600 transition-colors group-hover:text-white">{plan.velocidad}</div>
                     </div>
 
                     {/* Características */}
@@ -175,10 +175,10 @@ export function PlansCarousel({
                         const IconComponent = caracteristica.icono;
                         return (
                           <li key={idx} className="flex items-center gap-3">
-                            <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-cyan-100 text-cyan-600">
+                            <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-cyan-100 text-cyan-600 transition-all duration-300 group-hover:bg-slate-700 group-hover:text-white">
                               <IconComponent className="h-5 w-5" />
                             </div>
-                            <span className="text-slate-700 font-medium">{caracteristica.texto}</span>
+                            <span className="text-slate-700 font-medium transition-colors group-hover:text-slate-300">{caracteristica.texto}</span>
                           </li>
                         );
                       })}
