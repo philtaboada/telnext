@@ -186,7 +186,7 @@ export function PlansCarousel({
 
                     {/* Botón */}
                     <a
-                      href="https://api.whatsapp.com/send/?phone=51970527862&text&app_absent=0"
+                      href={`https://wa.me/51900111333?text=${encodeURIComponent(`Hola, quiero el plan de S/ ${plan.precio} por ${plan.velocidad}`)}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className={buttonClasses({

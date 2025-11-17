@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardDescription, CardTitle } from "@/components/ui/card";
 import { HeroCarousel, type HeroSlide } from "@/components/HeroCarousel";
 import { PlansCarousel, type Plan } from "@/components/PlansCarousel";
+import { WhatsAppChat } from "@/components/WhatsAppChat";
 
 // Iconos SVG
 function ArrowRightIcon(props: React.SVGProps<SVGSVGElement>) {
@@ -275,7 +276,7 @@ const planes = [
 const estadisticas = [
   { numero: "15", sufijo: "+", titulo: "Años de experiencia" },
   { numero: "5000", sufijo: "+", titulo: "Clientes en el mundo" },
-  { numero: "100", sufijo: "+", titulo: "Kilómetros de fibra" },
+  { numero: "100", sufijo: "+", titulo: "Kilómetros de fibra"   },
 ];
 
 
@@ -707,6 +708,16 @@ export default function Home() {
                     fibernextperu@gmail.com
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="https://wa.me/51900111333?text=Hola%20FiberNext%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-emerald-600 transition-colors"
+                  >
+                    WhatsApp: +51 900 111 333
+                  </a>
+                </li>
               </ul>
             </div>
             <div>
@@ -733,6 +744,12 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* Chat flotante de WhatsApp */}
+      <WhatsAppChat 
+        phoneNumber="51900111333" 
+        message="Hola FiberNext, quisiera más información sobre los planes"
+      />
     </div>
   );
 }
