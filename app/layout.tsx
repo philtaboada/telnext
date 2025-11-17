@@ -16,18 +16,18 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Telnex Perú | Internet Ultrarrápido y Soluciones Inalámbricas",
+  title: "FiberNext Perú | Internet Ultrarrápido y Soluciones Inalámbricas",
   description:
     "Planes de internet ultrarrápido, radioenlaces dedicados y soporte técnico especializado para hogares y empresas en Perú.",
   keywords: [
     "Internet Perú",
-    "Telnex",
+    "FiberNext Perú",
     "planes de internet",
     "radioenlaces",
     "fibra óptica",
     "soporte técnico",
   ],
-  metadataBase: new URL("https://telnextperu.com"),
+  metadataBase: new URL("https://www.fibernextperu.com/"),
   icons: {
     icon: "/f.png",
     apple: "/f.png",
